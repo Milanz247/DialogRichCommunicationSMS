@@ -1,0 +1,38 @@
+{
+    "name": "milanz247/dialog-rich-communication-sms",
+    "description": "This package is used for sending SMS messages using Dialog API. It is valid only for Dialog Rich Communication SMS API.",
+    "type": "library",
+    "keywords": [
+        "DialogRichCommunicationSMS",
+        "sms-api-dialog",
+        "laravel",
+        "php"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^11.10",
+        "guzzlehttp/guzzle": ">=7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milan Madusanka",
+            "email": "milansenarathna47@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Milanz247\\DialogRichCommunicationSMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milanz247\\DialogRichCommunicationSMS\\RichCommunicationServiceProvider"
+            ],
+            "aliases": {
+                "RichCommunication": "Milanz247\\DialogRichCommunicationSMS\\Facades\\RichCommunication"
+            }
+        }
+    }
+}
